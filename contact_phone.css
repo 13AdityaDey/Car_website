@@ -1,0 +1,8 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    background: url(https://i.pinimg.com/564x/f2/92/31/f29231222aff38cd4a099122acbd83c4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: antiquewhite;
+}
