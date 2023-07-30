@@ -1,0 +1,726 @@
+@media (min-width: 750px){
+    * {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+    /* LOGO--------------------------------------------------------------------------------------------------------------- */
+    .LOGO {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 45vw;
+        cursor: pointer;
+    }
+
+    #logo {
+        width: 8vw;
+    }
+    /* LOGO--------------------------------------------------------------------------------------------------------------- */
+    /* LOGIN BUTTON--------------------------------------------------------------------------------------------------------------- */
+    .submit {
+        position: absolute;
+        top: 2px;
+        left: 90vw;
+        padding: 0.5em;
+        border-radius: 20%;
+        margin: 2%;
+        /* margin-bottom: 30px; */
+        text-transform: uppercase;
+        /* font-style: italic; */
+        font-weight: 500;
+        font-size: large;
+        font-family: 'souvenirgoturwtotregw03-rg';
+        color: whitesmoke;
+        background-color: rgba(255, 0, 0, 0);
+        cursor: pointer;
+    }
+
+    .submit:hover {
+        color: wheat;
+    }
+    /* LOGIN BUTTON--------------------------------------------------------------------------------------------------------------- */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'souvenirgoturwtotregw03-rg';
+        background-color: black;
+    }
+    /* MENU_BAR----------------------------------------------------------------------------------------------------------------- */
+    #navigation {
+        display: flex;
+        top: .000001px;
+        position: sticky;
+        justify-content: start;
+        display: inline;
+        width: 2vw;
+        z-index: 500;
+    }
+
+    #menu {
+        display: inline;
+        width: 4vw;
+        width: 35px;
+        height: 30px;
+        margin: 30px 0 20px 20px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .bar {
+        width: 1.5vw;
+        margin: 0.2vw;
+        height: .5vh;
+        background: linear-gradient(to left, grey, white);
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+        position: relative;
+        left: 2vw;
+        top: 2vh;
+    }
+
+    /* #bar1{
+    transform: translateY(-4px);
+}
+#bar3{
+    transform: translateY(4px);
+} */
+    .nav li a {
+        text-decoration: none;
+        color: whitesmoke;
+        font-weight: 600;
+        transition: .7s ease-in-out;
+    }
+
+    .nav li a:hover {
+        color: wheat;
+    }
+
+    .nav li {
+        list-style: none;
+        padding: 16px 0;
+    }
+
+    .nav {
+        padding: 0;
+        margin: 0 20px;
+        display: none;
+        position: relative;
+        z-index: 101;
+    }
+
+    /* .icon .bar{
+    background-color: rgb(255, 4, 4);
+} */
+    .icon #bar1 {
+        transform: translateY(4px) rotate(-45deg);
+    }
+
+    .icon #bar2 {
+        opacity: 0;
+    }
+
+    .icon #bar3 {
+        transform: translateY(-6px) rotate(45deg);
+    }
+
+    .change {
+        color: whitesmoke;
+        background: url(https://i.pinimg.com/564x/ad/bf/59/adbf597709bb0c8aa5acde495137d82f.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 30vw;
+        margin: 0;
+        position: absolute;
+        font-size: 30px;
+        top: 0;
+        z-index: -100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #text {
+        color: white;
+    }
+    .car {
+        padding: 0;
+        margin: 0 20px;
+        transition: 1s ease;
+        display: none;
+    }
+
+    .car:hover {
+        color: rgb(244, 128, 128);
+    }
+
+    /* MENU_BAR---------------------------------------------------------------------------------------------------------------------- */
+    /*FRONT PAGE--------------------------------------------------------------------------------------------------------------------- */
+    .FRONT_PAGE {
+        background-color: black;
+        top: .01px;
+        display: flex;
+        position: relative;
+        justify-content: space-evenly;
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        z-index: -101;
+    }
+
+    .FRONT_PAGE_ph {
+        display: none;
+    }
+    /*FRONT PAGE--------------------------------------------------------------------------------------------------------------------- */
+    /*MAIN VIDEOS-------------------------------------------------------------------------------------------------------------------- */
+    .phone{
+        display: none;
+    }
+    .phantom{
+        display: flex;
+        position: relative;
+        margin-top: 2vh;
+        object-fit: cover;
+        justify-content: center;
+        height: 100vh;
+        width: 100%
+    }
+    .discover{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 75vw;
+        padding:2vh 3vw 2vh 3vw;
+        /* border-radius: 20%; */
+        /* opacity: 0.6; */
+        background: transparent;
+        color: white;
+    }
+    #X{
+        display: flex;
+        margin: 0;
+        position: relative;
+        font-size: 20px;
+    }
+    .phantom #g{
+        aspect-ratio: 2/1;
+        object-fit: cover;
+    }
+    /*MAIN VIDEOS-------------------------------------------------------------------------------------------------------------------- */
+    .write_phone{
+        display: none;
+    }
+    .WRITTING{
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        background-color: black;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: 100;
+        align-items: center;
+        color: white;
+        width: 100%;
+        height: 80vh;
+    }
+
+    /*INTERIOR PART------------------------------------------------------------------------------------------------------------------ */
+    /*PHANTOM------------------------------------------------------------------------------------------------------------------ */
+    #MOBILE1{
+        display: none;
+    }
+    .inside-background1{
+        width:100%;
+        height: 100vh;
+        margin-top: 2vh;
+        /* left: 5.1vw; */
+        position: relative;
+        background: url(https://images.caricos.com/r/rolls-royce/2019_rolls-royce_phantom_tranquillity/images/2560x1440/2019_rolls-royce_phantom_tranquillity_12_2560x1440.jpg);
+        background-size:cover;
+        backface-visibility: initial;
+         /* filter: blur(8px);
+        -webkit-filter: blur(8px);  */
+        background-repeat: no-repeat;
+        background-blend-mode: color-burn;
+        z-index: -1;
+    }
+    #img1{
+        display: flex;
+        position: relative;
+        top: 175px;
+        left: 100px;
+        opacity: 1;
+    
+    }
+    #img2{
+        display: flex;
+        position: relative;
+        left: 900px;
+    }    
+    /*PHANTOM------------------------------------------------------------------------------------------------------------------ */
+
+    /*CULLINAN------------------------------------------------------------------------------------------------------------------ */
+    .MOBILE2{
+        display: none;
+    }
+    .inside-background2{
+        width:100%;
+        height: 100vh;
+        margin-top: 2vh;
+        /* left: 5.1vw; */
+        position: relative;
+        background: url(https://media.ed.edmunds-media.com/rolls-royce/cullinan/2020/oem/2020_rolls-royce_cullinan_4dr-suv_base_ri_oem_1_1280x855.jpg);
+        background-size:cover;
+        backface-visibility: initial;
+         /* filter: blur(8px);
+        -webkit-filter: blur(8px);  */
+        background-repeat: no-repeat;
+        background-blend-mode: color-burn;
+        z-index: -1;
+    }  
+    /*CULLINAN------------------------------------------------------------------------------------------------------------------ */
+
+    /*WRAITH------------------------------------------------------------------------------------------------------------------ */
+    .MOBILE3{
+        display: none;
+    }
+    .inside-background3{
+        width:100%;
+        height: 100vh;
+        margin-top: 2vh;
+        /* left: 5.1vw; */
+        position: relative;
+        background: url(https://media.ed.edmunds-media.com/rolls-royce/wraith/2018/oem/2018_rolls-royce_wraith_coupe_base_ri_oem_1_1280x855.jpg);
+        background-size:cover;
+        backface-visibility: initial;
+         /* filter: blur(8px);
+        -webkit-filter: blur(8px);  */
+        background-repeat: no-repeat;
+        background-blend-mode: color-burn;
+        z-index: -1;
+    }
+    /*WRAITH------------------------------------------------------------------------------------------------------------------ */
+
+    /*DAWN------------------------------------------------------------------------------------------------------------------ */
+    .MOBILE4{
+        display: none;
+    }
+    .inside-background4{
+        width:100%;
+        height: 100vh;
+        margin-top: 2vh;
+        /* left: 5.1vw; */
+        position: relative;
+        background: url(https://whatcar.co.th/wp-content/uploads/2017/06/rolls-bb-526.jpg);
+        background-size:cover;
+        backface-visibility: initial;
+         /* filter: blur(8px);
+        -webkit-filter: blur(8px);  */
+        background-repeat: no-repeat;
+        background-blend-mode: color-burn;
+        z-index: -1;
+    }
+    /*DAWN------------------------------------------------------------------------------------------------------------------ */
+
+    /*GHOST------------------------------------------------------------------------------------------------------------------ */
+    .MOBILE5{
+        display: none;
+    }
+    .inside-background5{
+        width:100%;
+        height: 100vh;
+        margin-top: 2vh;
+        /* left: 5.1vw; */
+        position: relative;
+        background: url(https://editorial.pxcrush.net/carsales/general/editorial/rolls-royce-ghost-extended-08.jpg?width=1024&height=682);
+        background-size:cover;
+        backface-visibility: initial;
+         /* filter: blur(8px);
+        -webkit-filter: blur(8px);  */
+        background-repeat: no-repeat;
+        background-blend-mode: color-burn;
+        z-index: -1;
+    } 
+    /*GHOST------------------------------------------------------------------------------------------------------------------ */
+
+    /*SECTRE------------------------------------------------------------------------------------------------------------------ */
+    .MOBILE6{
+        display: none;
+    }
+    .inside-background6{
+        width:100%;
+        height: 100vh;
+        margin-top: 2vh;
+        /* left: 5.1vw; */
+        position: relative;
+        background: url(https://media.ed.edmunds-media.com/rolls-royce/spectre/2024/fe/2024_rolls-royce_spectre_rint_fe_10182210_1280.jpg);
+        background-size:cover;
+        backface-visibility: initial;
+         /* filter: blur(8px);
+        -webkit-filter: blur(8px);  */
+        background-repeat: no-repeat;
+        background-blend-mode: color-burn;
+        z-index: -1;
+    }   
+    /*SECTRE------------------------------------------------------------------------------------------------------------------ */
+
+    /*INTERIOR PART------------------------------------------------------------------------------------------------------------------ */
+    /* shourya part----------------------------------------------------------------------------------------- */
+    .heading{
+        display: flex;
+        position: relative;
+        justify-content: center;
+       
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 10px;
+    }
+    #link{
+        text-decoration: none;
+        color: white;
+    }
+    #link:hover{
+        color: wheat;
+        transition:all 0.3s ease-in-out;
+    }
+    /* Apply styles to the footer table */
+    .table-container {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow-x: auto;
+        font-family: 'souvenirgoturwtotregw03-rg';
+        
+        
+        /* Enable horizontal scrolling if the table overflows */
+    }
+    table {
+        width: 100%;
+        border: 1px solid rgb(255, 255, 255);
+        
+        
+    }
+    tr,
+    td {
+        padding: 7px;
+        text-align: left;
+    }
+    tr {
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+    }
+    .social-icons a {
+        color: rgb(255, 255, 255);
+        margin-right: 10px;
+        margin-top: 600px;
+        margin-bottom: 0px;
+        float: right;
+    }
+    #lo{
+        margin: 1vw;
+        
+    }
+    #lo:hover{
+        color: wheat;
+        transition:all 0.3s ease-in-out;
+    }
+    thead tr  {
+      padding:7px;
+    }
+    /* shourya part----------------------------------------------------------------------------------------- */
+    /* --FRONT PAGE------------------------------------------------------------------------------------------------------------------ */
+    footer{
+        display: flex;
+        bottom: 0.00000001px;
+        position: sticky;
+        justify-content: center;
+        padding: 1vh;
+        background-color: black;
+        color: white;
+    }
+}
+@media (max-width: 750px){
+    body{
+        background-color: black;
+    }
+    /* FRONT PAGE--------------------------------------------------------------------------------------------------------- */
+    .FRONT_PAGE {
+        display: none;
+    }
+    .FRONT_PAGE_ph{
+        display: flex;
+        position: relative;
+        background-color: black;
+        top: .01px;
+        justify-content: space-evenly;
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        z-index: -101;
+    }
+    /* FRONT PAGE--------------------------------------------------------------------------------------------------------- */
+    .LOGO{
+        display: none;
+    }
+    /* ---LOGIN------------------------------------------------------------------------------------------------------------- */
+    .submit {
+        position: absolute;
+        top: 4vh;
+        left: 70vw;
+        padding: 0.5em;
+        border-radius: 20%;
+        margin: 2%;
+        /* margin-bottom: 30px; */
+        text-transform: uppercase;
+        /* font-style: italic; */
+        font-weight: 500;
+        font-size: large;
+        color: whitesmoke;
+        background-color: rgba(255, 0, 0, 0);
+        cursor: pointer;
+    }
+
+    .submit:hover {
+        color: wheat;
+    }
+    /* ---LOGIN------------------------------------------------------------------------------------------------------------- */
+     /* MENU_BAR----------------------------------------------------------------------------------------------------------------- */
+    #navigation {
+        display: flex;
+        top: .000001px;
+        position: sticky;
+        justify-content: start;
+        display: inline;
+        width: 2vw;
+    }
+
+    #menu {
+        display: inline;
+        width: 4vw;
+        width: 35px;
+        height: 30px;
+        margin: 30px 0 20px 20px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .bar {
+        width: 3vw;
+        margin: 0.2vw;
+        height: .5vh;
+        background: linear-gradient(to left, grey, white);
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+        position: relative;
+        left: 2vw;
+        top: 2vh;
+    }
+
+    /* #bar1{
+    transform: translateY(-4px);
+}
+#bar3{
+    transform: translateY(4px);
+} */
+    .nav li a {
+        text-decoration: none;
+        color: whitesmoke;
+        font-weight: 600;
+        transition: .7s ease-in-out;
+    }
+
+    .nav li a:hover {
+        color: wheat;
+    }
+
+    .nav li {
+        list-style: none;
+        padding: 2vw 0;
+        margin-left: 5vw;
+    }
+
+    .nav {
+        padding: 0;
+        margin: 0 20px;
+        display: none;
+        position: relative;
+        z-index: 101;
+    }
+
+    /* .icon .bar{
+    background-color: rgb(255, 4, 4);
+} */
+    .icon #bar1 {
+        transform: translateY(4px) rotate(-45deg);
+    }
+
+    .icon #bar2 {
+        opacity: 0;
+    }
+
+    .icon #bar3 {
+        transform: translateY(-6px) rotate(45deg);
+    }
+
+    .change {
+        color: whitesmoke;
+        background: transparent;
+        background-size: cover;
+        height: 100vh;
+        width: 30vw;
+        margin: 0;
+        position: absolute;
+        font-size: 6vw;
+        top: 0;
+        z-index: -100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #text {
+        color: white;
+    }
+    #text:hover{
+        color: wheat;
+    }
+    /* .change::before{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.214);
+    width: 20vw;
+} */
+    .car {
+        padding: 0;
+        margin: 0 20px;
+        transition: 1s ease;
+        display: none;
+    }
+
+    .car:hover {
+        color: rgb(244, 128, 128);
+    }
+
+    /* MENU_BAR----------------------------------------------------------------------------------------------------------------- */
+    /* MAIN VIDEOS------------------------------------------------------------------------------------------------------------------- */
+    .phantom{
+        display: none;
+    }
+    .phone{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        object-fit: cover;
+        width: 100%;
+        height: 100vh;
+        padding-top: 3vw;
+    }
+    .discover{
+        display: flex;
+        position: absolute;
+        left: 0px;
+        z-index: 500;
+        width: 30vw;
+        height: 6vh;
+        padding-left: 3vw;
+        font-weight: bold;
+        border-radius: 10%;
+        background: transparent;
+        color: wheat;
+    }
+    /* MAIN VIDEOS------------------------------------------------------------------------------------------------------------------- */
+    .write_phone{
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        padding-top: 3vw;
+    }
+    .WRITTING{
+        display: none;
+    }
+    /*INTERIOR PART------------------------------------------------------------------------------------------------------------------ */
+    /*PHANTOM------------------------------------------------------------------------------------------------------------------ */
+    .MOBILE1{
+        display: block;
+    }
+    .inside-background1{
+        display: none;
+    }
+    #img1{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        padding-top: 3vw;   
+    }
+    /*PHANTOM------------------------------------------------------------------------------------------------------------------ */
+    /*CULLINAN------------------------------------------------------------------------------------------------------------------ */
+    .MOBILE2{
+        display: block;
+    }
+    .inside-background2{
+        display: none;
+    }
+
+    /*CULLINAN------------------------------------------------------------------------------------------------------------------ */
+    /*WRAITH------------------------------------------------------------------------------------------------------------------ */
+    .MOBILE3{
+        display: block;
+    }
+    .inside-background3{
+        display: none;
+    }
+
+    /*WRAITH------------------------------------------------------------------------------------------------------------------ */
+    /*DAWN------------------------------------------------------------------------------------------------------------------ */
+    .MOBILE4{
+        display: block;
+    }
+    .inside-background4{
+        display: none;
+    }
+
+    /*DAWN------------------------------------------------------------------------------------------------------------------ */
+    /*GHOST------------------------------------------------------------------------------------------------------------------ */
+    .MOBILE5{
+        display: block;
+    }
+    .inside-background5{
+        display: none;
+    }
+
+    /*GHOST------------------------------------------------------------------------------------------------------------------ */
+    /*SPECTRE------------------------------------------------------------------------------------------------------------------ */
+    .MOBILE6{
+        display: block;
+    }
+    .inside-background6{
+        display: none;
+    }
+    /*SPECTRE------------------------------------------------------------------------------------------------------------------ */
+
+    /* END SHOURYA PART----------------------------------------------------------------------------------------------------------- */
+    .heading{
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+    .table-container{
+        display: none;
+    }
+    /* END SHOURYA PART----------------------------------------------------------------------------------------------------------- */
+}
