@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dealer Page</title>
+  <link rel="stylesheet" href="ROLLS ROYCE WEBSITE\ROLLS ROYCE WEBSITE\webfontkit-20230716-034912">
+  <style>
+    body {
+      background: url(dealerbg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'souvenirgoturwtotregw03-rg';
+    }
+
+    .container {
+      position: absolute;
+      top: 15vh;
+      margin: 2vw;
+      width:34vw;
+      height:68vh ;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid black;
+      border-radius: 5px;
+      background-color:transparent;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      animation: fade-in 1s ease-in-out;
+      opacity: .2;
+    }
+
+    .container:hover {
+      transition: 2s ease;
+      opacity: 1;
+    }
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .dealer {
+        color: black;
+      margin-top: 0;
+      text-align: center;
+      font-size: 5vh;
+      font-family: 'souvenirgoturwtotregw03-rg';
+    }
+
+    .container p {
+      
+      margin-top: 0;
+      text-align: center;
+      font-size: 16px;
+      color: #888;
+      font-family: 'souvenirgoturwtotregw03-rg';
+    }
+
+    .container input[type="text"],
+    .container input[type="email"],
+    .container input[type="tel"],
+    .container textarea {
+      width: 95%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid rgb(0, 0, 0);
+      transition: border-color 0.3s ease-in-out;
+    }
+
+    .container input[type="submit"] {
+      background: linear-gradient(to left, red, blue);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+     text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    
+    }
+
+    .container input[type="submit"]:hover {
+      background: linear-gradient(to right, red, blue);
+    } 
+
+    .container input[type="text"]:focus,
+    .container input[type="email"]:focus,
+    .container input[type="tel"]:focus,
+    /* .container textarea:focus {
+      outline: none;
+      border-color:rgb(0, 0, 0);
+    } */
+
+    .form-submitted {
+      animation: slide-up 0.5s ease-in-out;
+    }
+
+    
+    
+   .getmail{
+    text-align: center;
+   }
+   .submit{
+    display: flex;
+    justify-content: center;
+   }
+   .heading{
+    display: flex;
+    justify-content: center;
+    filter:opacity(90%);
+   }
+   
+  
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="heading"> <img src="/ROLLS ROYCE WEBSITE/ROLLS ROYCE WEBSITE/VIDEOS/8940_Rolls-Royce-Logo-Rolls-Royce-Brand.jpg"alt=" "height="70vh"width="60vw"> </div>
+     <div class="dealer">FIND A DEALER</div> <hr>
+     <form id="contactForm">
+        <br>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br><br>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email" required><br><br>
+        <input type="text" id="city" name="city" placeholder="Enter your city " required><br><br>
+        <input type="text" id="country" name="country" placeholder="Enter your country " required><br><br><hr>
+        <div style="color: aliceblue;" class="getmail"> You will be notified through our mail</div><hr>
+        <div class="submit"><input type="submit" value="Submit"></div>
+
+
+    <!-- <form id="contactForm">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+      <input type="text" id="subject" name="subject" placeholder="Subject" required>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Submit">
+    </form> -->
+  </div>
+
+   <script>
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var city = document.getElementById("city").value;
+      var country = document.getElementById("country").value;
+
+
+      console.log("Name: " + name);
+      console.log("Email: " + email);
+      console.log("City: " + city);
+      console.log("Country: " + country);
+     
+
+
+      alert("WELCOME TO ROLLS ROYCE");
+
+
+      document.getElementById("contactForm").classList.add("form-submitted");
+
+
+      setTimeout(function () {
+        document.getElementById("contactForm").reset();
+        document.getElementById("contactForm").classList.remove("form-submitted");
+      }, 1000);
+    });
+  </script>
+</body>
+
+</html>
